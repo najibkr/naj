@@ -1,0 +1,16 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude: [build/**]
+  # language:
+  #   strict-raw-types: true
+  # strong-mode:
+  # implicit-casts: false
+  # implicit-dynamic: false
+
+linter:
+  rules:
+    avoid_print: true
+    prefer_single_quotes: true
+    prefer_relative_imports: true
+    cancel_subscriptions: true

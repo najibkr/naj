@@ -1,0 +1,25 @@
+name: naj
+description: An open-source code generation and file management system written in Dart
+publish_to: "none"
+version: 0.0.1+1
+
+environment:
+  sdk: ">=2.16.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Local Assets:
+  assets:
+    - assets/images/
+    - assets/svgs/
