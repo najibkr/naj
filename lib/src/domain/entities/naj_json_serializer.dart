@@ -51,7 +51,7 @@ class NajJsonSerializer extends NajStaticMethod {
     if (_isPrimitive(variable)) return '$key :$value,';
     value = '${_formatToJsonValue(variable)}.map((e)=> e.toString()).toList()';
     if (_isList(variable) && _isDateTime(variable)) return '$key :$value,';
-    value = '${_formatToJsonValue(variable)}.toString()';
+    value = _formatToJsonValue(variable);
     if (_isDateTime(variable)) return '$key :$value,';
     value = '${_formatToJsonValue(variable)}.map((e)=> e.toJson()).toList()';
     if (_isList(variable)) return '$key :$value,';
