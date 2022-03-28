@@ -110,10 +110,9 @@ class NajJsonSerializer extends NajStaticMethod {
 
   String get _formatedFromJson {
     final filtered = className.split('<').first;
-    final declare = 'factory $filtered.fromJson(Map<String,dynamic>? json)';
-    final empty = 'if(json == null)return $className.init();';
+    final declare = 'factory $filtered.fromJson(Map<String,dynamic> json)';
     final variables = _formattedFromJsonVariables;
-    return '$declare{$empty return $className($variables); }';
+    return '$declare{return $className($variables); }';
   }
 
   @override
