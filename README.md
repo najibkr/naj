@@ -7,3 +7,4 @@ The purpose of this package is to automate code generation for Dart and Golang p
 
 ## How to Use: 
 *. `naj class --create=<ClassName>
+*. `naj enum --create<EnumName>
